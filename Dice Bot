@@ -1,0 +1,17 @@
+sinzubot/
+├── config/
+│   └── database.js          # MongoDB Connection Config
+├── models/
+│   ├── Global.js            # globalModel schema
+│   ├── Thread.js            # threadModel schema
+│   └── UserDashboard.js     # userDashBoardModel schema
+├── handlers/
+│   ├── commandHandler.js    # Tagaproseso ng mga command (!setallnicknames, !lockgcname)
+│   └── eventHandler.js      # Tagaproseso ng auto reply at GC Name locking
+├── commands/
+│   ├── setallnicknames.js   # Logic para sa pagpapalit ng nicknames
+│   └── lockgcname.js        # Logic para sa pag-lock ng GC Name
+├── appstate.json            # Facebook Session Cookie (Login credentials)
+├── .env                     # Secrets (MONGO_URI, PORT, etc.)
+├── index.js                 # Main Entry Point (MQTT Listener)
+└── package.json             # Project Dependencies
